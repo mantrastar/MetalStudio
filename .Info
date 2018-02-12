@@ -1,0 +1,8 @@
+.Info
+
+Build Instructions
+------------------------------------------------------------------------
+xcrun -sdk macosx metal Metal/Geometry.metal -o Metal/Geometry.air
+xcrun -sdk macosx metallib Metal/Geometry.air -o Metal/Geometry.metallib
+swiftc -target x86_64-apple-macosx10.13 MetalStudio.swift
+./MetalStudio
